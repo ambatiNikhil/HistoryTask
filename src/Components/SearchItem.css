@@ -1,0 +1,25 @@
+.listStructure {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 15px;
+}
+.paragraph {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  margin: 2px;
+}
+
+.logoSize {
+  height: 30px;
+  width: 50px;
+  margin: 4px;
+}
+
+.deleteImage {
+  height: 15px;
+  width: 15px;
+  margin: 2px;
+}
