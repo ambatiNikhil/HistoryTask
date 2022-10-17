@@ -3,7 +3,7 @@ import './SearchItem.css'
 const SearchItem = props => {
   const {searchDetails} = props
   const {timeAccessed, logoUrl, title, domainUrl} = searchDetails
-  const testid = 'delete'
+
   return (
     <div>
       <li className="listStructure">
@@ -12,7 +12,7 @@ const SearchItem = props => {
         <p className="paragraph">{title}</p>
         <p className="paragraph">{domainUrl}</p>
 
-        <button id={testid} type="button" key={searchDetails.id}>
+        <button type="button" key={searchDetails.id}>
           <img
             src="https://assets.ccbp.in/frontend/react-js/delete-img.png"
             className="deleteImage"

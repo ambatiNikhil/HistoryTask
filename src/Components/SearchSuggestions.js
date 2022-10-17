@@ -5,8 +5,16 @@ import './SearchSuggestions.css'
 import SearchItem from './SearchItem'
 
 class SearchSuggestions extends Component {
+  state = {
+    itemsList: '',
+  }
+
   render() {
     const {initialHistoryList} = this.props
+
+    const {itemsList} = this.state
+
+    this.setState({itemsList: initialHistoryList})
 
     return (
       <div className="mainContainer">
@@ -33,8 +41,8 @@ class SearchSuggestions extends Component {
         </div>
         <div className="bodyContiner">
           <ul>
-            {initialHistoryList.map(eachTask => (
-              <SearchItem searchDetails={eachTask} key={eachTask.id} />
+            {itemsList.map(eachItem => (
+              <SearchItem searchDetails={eachItem} key={eachItem.id} />
             ))}
           </ul>
         </div>
